@@ -1,0 +1,42 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+body,html{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  width: 100vw;
+  background-color: #010101;
+  color: azure;
+  overflow-x: hidden;
+}
+.board{display:flex;flex-direction: column;justify-content: center;align-items: center;margin-top: 1%;overflow: hidden;
+}
+.board button{color:azure ;}
+div{display: flex;flex-direction:row;}
+.square{
+  background-color: blueviolet;
+  width:3rem;
+  height:3rem;
+}
+#take{margin-bottom:1rem;justify-content: space-between;}
+#take h3{text-shadow: 1px 1px 1px blueviolet;width: fit-content;padding: .3rem;}
+#left{border-right: 2px solid blueviolet;}
+#right{border-left: 2px solid blueviolet;}
+.inputs{margin: 2%;flex-direction: column;gap:.2rem;}.inputs input{width:8.6rem;padding: .2rem;border: none;outline:.2rem solid blueviolet;}
+#status{border:2px solid azure;outline: 2px solid blueviolet;display: inline;padding: .8rem;}#statusDiv{justify-content: center;margin-bottom: 1rem;}
+button{transform: ease;}
+.win{ animation: lines 1s ease .4s infinite forwards;box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  background: #00F260;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #05e69b, #00F260);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #119171, #00F260); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+@keyframes lines {
+  from{transform:rotate(0deg);}to{transform:rotate(180deg);}
+0%{text-decoration: line-through;}
+25%{text-decoration: none;}
+50%{text-decoration: none;}
+100%{text-decoration:line-through;}
+}
+#clear{padding:1.5rem;font-size:large;justify-content: space-between;}#clear button{color:azure;padding:.5rem;font-size:large;background-color: #010101;border: 2px solid azure;outline: 2px solid blueviolet;border-radius:1rem;}
